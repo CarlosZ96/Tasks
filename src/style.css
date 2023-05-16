@@ -1,0 +1,44 @@
+.TaskListContainer {
+    border-bottom: 4px solid #222;
+    border-right: 4px solid #222;
+    border-top: 2px solid #222;
+    border-left: 2px solid #222;
+    border-radius: 8px;
+    margin: 15px 20px 0 20px;
+    height: 300px;
+  }
+  
+  .TaskListContainer ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 10px;
+  }
+  
+  .upload {
+    height: 25px;
+    width: 25px;
+  }
+  
+  .AddContainer input {
+    border: none;
+    margin: 18.720px 0;
+    color: rgb(147, 147, 147);
+    font-size: 16px;
+  }
+  
+  .clear {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .ClearButton {
+    height: 80%;
+    width: 100%;
+    background-color: rgb(223, 223, 223);
+    color: rgb(147, 147, 147);
+  }
