@@ -1,7 +1,7 @@
 <a name="readme-top"></a>
 
 <div align="center">
-   <img src="img/1280px-E3_Logo.svg.png" alt="logo" width="140"  height="auto" />
+   <img src="to-do-list.png" alt="logo" width="140"  height="auto" />
   <br/>
   <h3><b>To-Do List</b></h3>
 

@@ -4,9 +4,21 @@
   "description": "<a name=\"readme-top\">Organize your time with this simple application, which will allow you to manage your own to-do list.</a>",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --mode=development",
+    "start": "webpack serve --open"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "css-loader": "^6.7.3",
+    "html-webpack-plugin": "^5.5.1",
+    "style-loader": "^3.3.2",
+    "webpack": "^5.82.1",
+    "webpack-cli": "^5.1.1"
+  },
+  "dependencies": {
+    "webpack-dev-server": "^4.15.0"
+  }
 }
