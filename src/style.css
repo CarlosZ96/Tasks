@@ -55,7 +55,7 @@
   justify-content: space-between;
 }
 
-.ListContainer{
+.ListContainer {
   display: flex;
   flex-direction: column;
 }
@@ -64,6 +64,6 @@
   width: 100%;
 }
 
-.TaskName{
+.TaskName {
   width: 100%;
 }
