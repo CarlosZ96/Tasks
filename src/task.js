@@ -2,7 +2,7 @@ import options from './options.png';
 import enter from './enter.png';
 
 const AddNewTask = document.querySelector('.Add');
-AddNewTask.innerHTML=`<img src="${enter}" class ="upload" alt="enter">`;
+AddNewTask.innerHTML = `<img src ="${enter}" class ="upload" alt="enter">`;
 export default class Tasks {
   constructor(tasks) {
     this.tasks = tasks;
