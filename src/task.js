@@ -6,11 +6,6 @@ AddNewTask.innerHTML = `<img src ="${enter}" class ="upload" alt="enter">`;
 export default class Tasks {
   constructor(tasks) {
     this.tasks = tasks;
-    this.AddTask = (description) => {
-      const task = { description, iscomplete: false, i: 0 };
-      tasks.push(task);
-      localStorage.setItem('tasks', JSON.stringify(this.tasks));
-    };
     this.ShowTask = () => {
       const listcontainer = document.querySelector('.ListContainer');
       listcontainer.innerHTML = '';
