@@ -2,7 +2,7 @@ export default class Tasks {
   constructor(tasks) {
     this.tasks = tasks;
     this.AddTask = (description) => {
-      const task = { description, iscomplete: false, i: 0};
+      const task = { description, iscomplete: false, i: 0 };
       tasks.push(task);
       localStorage.setItem('tasks', JSON.stringify(this.tasks));
     };

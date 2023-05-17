@@ -1,4 +1,4 @@
-import './style.css'
+import './style.css';
 import { Tasks } from './task.js';
 
 const AddNewTask = document.querySelector('.Add');
