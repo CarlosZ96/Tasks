@@ -34,7 +34,7 @@
 }
 
 .clear {
-  height: 50px;
+  height: max-content;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -66,5 +66,4 @@
 
 .TaskName{
   width: 100%;
-  background-color: darkslateblue;
 }
