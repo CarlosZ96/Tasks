@@ -16,7 +16,7 @@
   \*************************************************************/
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/noSourceMaps.js */ \"./node_modules/css-loader/dist/runtime/noSourceMaps.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);\n// Imports\n\n\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));\n// Module\n___CSS_LOADER_EXPORT___.push([module.id, \".TaskListContainer {\\r\\n  border-bottom: 4px solid #222;\\r\\n  border-right: 4px solid #222;\\r\\n  border-top: 2px solid #222;\\r\\n  border-left: 2px solid #222;\\r\\n  border-radius: 8px;\\r\\n  margin: 15px 20px 0 20px;\\r\\n  height: 300px;\\r\\n}\\r\\n\\r\\n.TaskListContainer ul {\\r\\n  list-style: none;\\r\\n  padding: 0;\\r\\n  display: flex;\\r\\n  align-items: center;\\r\\n  justify-content: space-between;\\r\\n  margin: 0 10px;\\r\\n}\\r\\n\\r\\n.TittleContainer {\\r\\n  border-bottom: 1px solid #2d2d2d;\\r\\n}\\r\\n\\r\\n.upload {\\r\\n  height: 25px;\\r\\n  width: 25px;\\r\\n}\\r\\n\\r\\n.AddContainer input {\\r\\n  border: none;\\r\\n  margin: 18px 0 18px 0;\\r\\n  color: rgb(147, 147, 147);\\r\\n  font-size: 16px;\\r\\n}\\r\\n\\r\\n.clear {\\r\\n  height: max-content;\\r\\n  display: flex;\\r\\n  justify-content: center;\\r\\n  align-items: center;\\r\\n}\\r\\n\\r\\n.ClearButton {\\r\\n  height: 80%;\\r\\n  width: 100%;\\r\\n  background-color: rgb(223, 223, 223);\\r\\n  color: rgb(147, 147, 147);\\r\\n}\\r\\n\\r\\n.task,\\r\\n.TaskTittleContainer {\\r\\n  display: flex;\\r\\n  flex-direction: row;\\r\\n  align-items: center;\\r\\n  justify-content: space-between;\\r\\n}\\r\\n\\r\\n.ListContainer {\\r\\n  display: flex;\\r\\n  flex-direction: column;\\r\\n}\\r\\n\\r\\n.task {\\r\\n  width: 100%;\\r\\n}\\r\\n\\r\\n.TaskName {\\r\\n  width: 100%;\\r\\n}\\r\\n\", \"\"]);\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack://tasks/./src/style.css?./node_modules/css-loader/dist/cjs.js");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/noSourceMaps.js */ \"./node_modules/css-loader/dist/runtime/noSourceMaps.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);\n// Imports\n\n\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));\n// Module\n___CSS_LOADER_EXPORT___.push([module.id, \".TaskListContainer {\\r\\n  border-bottom: 4px solid #222;\\r\\n  border-right: 4px solid #222;\\r\\n  border-top: 2px solid #222;\\r\\n  border-left: 2px solid #222;\\r\\n  border-radius: 8px;\\r\\n  margin: 15px 20px 0 20px;\\r\\n  height: 300px;\\r\\n}\\r\\n\\r\\n.TaskListContainer ul {\\r\\n  list-style: none;\\r\\n  padding: 0;\\r\\n  display: flex;\\r\\n  align-items: center;\\r\\n  justify-content: space-between;\\r\\n  margin: 0 10px;\\r\\n}\\r\\n\\r\\n.TittleContainer {\\r\\n  border-bottom: 1px solid #2d2d2d;\\r\\n}\\r\\n\\r\\n.upload {\\r\\n  height: 25px;\\r\\n  width: 25px;\\r\\n  background: none;\\r\\n  border: none;\\r\\n}\\r\\n\\r\\n.AddContainer input {\\r\\n  border: none;\\r\\n  margin: 18px 0 18px 0;\\r\\n  color: rgb(147, 147, 147);\\r\\n  font-size: 16px;\\r\\n}\\r\\n\\r\\n.Add {\\r\\n  height: 24px;\\r\\n  width: 24px;\\r\\n  background: none;\\r\\n  border: none;\\r\\n  display: flex;\\r\\n  justify-content: center;\\r\\n  align-items: center;\\r\\n}\\r\\n\\r\\n.clear {\\r\\n  height: max-content;\\r\\n  display: flex;\\r\\n  justify-content: center;\\r\\n  align-items: center;\\r\\n}\\r\\n\\r\\n.ClearButton {\\r\\n  height: 80%;\\r\\n  width: 100%;\\r\\n  background-color: rgb(223, 223, 223);\\r\\n  color: rgb(147, 147, 147);\\r\\n}\\r\\n\\r\\n.task,\\r\\n.TaskTittleContainer {\\r\\n  display: flex;\\r\\n  flex-direction: row;\\r\\n  align-items: center;\\r\\n  justify-content: space-between;\\r\\n}\\r\\n\\r\\n.ListContainer {\\r\\n  display: flex;\\r\\n  flex-direction: column;\\r\\n}\\r\\n\\r\\n.task {\\r\\n  width: 100%;\\r\\n}\\r\\n\\r\\n.TaskName {\\r\\n  width: 100%;\\r\\n}\", \"\"]);\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack://tasks/./src/style.css?./node_modules/css-loader/dist/cjs.js");
 
 /***/ }),
 
@@ -116,7 +116,7 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElem
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n/* harmony import */ var _task_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./task.js */ \"./src/task.js\");\n\r\n\r\n\r\nconst AddNewTask = document.querySelector('.Add');\r\nconst tasks = [];\r\nconst taskso = new _task_js__WEBPACK_IMPORTED_MODULE_1__.Tasks(tasks);\r\n\r\nAddNewTask.addEventListener('click', (event) => {\r\n  event.preventDefault();\r\n  const description = document.getElementById('TaskInput').value;\r\n  taskso.AddTask(description);\r\n  taskso.ShowTask();\r\n  document.querySelector('.TaskListContainer').reset();\r\n});\r\n\n\n//# sourceURL=webpack://tasks/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n/* harmony import */ var _task_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./task.js */ \"./src/task.js\");\n\r\n\r\n\r\n\r\nconst AddNewTask = document.querySelector('.Add');\r\nconst tasks = [];\r\nconst taskso = new _task_js__WEBPACK_IMPORTED_MODULE_1__.Tasks(tasks);\r\n\r\nAddNewTask.addEventListener('click', (event) => {\r\n  event.preventDefault();\r\n  const description = document.getElementById('TaskInput').value;\r\n  taskso.AddTask(description);\r\n  taskso.ShowTask();\r\n  document.querySelector('.TaskListContainer').reset();\r\n});\r\n\n\n//# sourceURL=webpack://tasks/./src/index.js?");
 
 /***/ }),
 
@@ -126,7 +126,27 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sty
   \*********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"Tasks\": () => (/* binding */ Tasks),\n/* harmony export */   \"default\": () => (/* binding */ Tasks)\n/* harmony export */ });\nclass Tasks {\r\n  constructor(tasks) {\r\n    this.tasks = tasks;\r\n    this.AddTask = (description) => {\r\n      const task = { description, iscomplete: false, i: 0 };\r\n      tasks.push(task);\r\n      localStorage.setItem('tasks', JSON.stringify(this.tasks));\r\n    };\r\n    this.ShowTask = () => {\r\n      const listcontainer = document.querySelector('.ListContainer');\r\n      listcontainer.innerHTML = '';\r\n      this.tasks.forEach((task) => {\r\n        const taskcontainer = document.createElement('li');\r\n        taskcontainer.classList.add('task');\r\n        taskcontainer.innerHTML = `\r\n    <div class=\"TaskTittleContainer\">\r\n        <input type=\"checkbox\">\r\n        <h3 class=\"TaskName\">${task.description}</h3>\r\n    </div>\r\n    <button class=\"upload\"></button>\r\n      `;\r\n        listcontainer.appendChild(taskcontainer);\r\n      });\r\n    };\r\n  }\r\n}\r\n\n\n//# sourceURL=webpack://tasks/./src/task.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"Tasks\": () => (/* binding */ Tasks),\n/* harmony export */   \"default\": () => (/* binding */ Tasks)\n/* harmony export */ });\n/* harmony import */ var _options_png__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./options.png */ \"./src/options.png\");\n/* harmony import */ var _enter_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./enter.png */ \"./src/enter.png\");\n\r\n\r\n\r\nconst AddNewTask = document.querySelector('.Add');\r\nAddNewTask.innerHTML=`<img src=\"${_enter_png__WEBPACK_IMPORTED_MODULE_1__}\" class =\"upload\" alt=\"enter\">`;\r\nclass Tasks {\r\n  constructor(tasks) {\r\n    this.tasks = tasks;\r\n    this.AddTask = (description) => {\r\n      const task = { description, iscomplete: false, i: 0 };\r\n      tasks.push(task);\r\n      localStorage.setItem('tasks', JSON.stringify(this.tasks));\r\n    };\r\n    this.ShowTask = () => {\r\n      const listcontainer = document.querySelector('.ListContainer');\r\n      listcontainer.innerHTML = '';\r\n      this.tasks.forEach((task) => {\r\n        const taskcontainer = document.createElement('li');\r\n        taskcontainer.classList.add('task');\r\n        taskcontainer.innerHTML = `\r\n    <div class=\"TaskTittleContainer\">\r\n        <input type=\"checkbox\">\r\n        <h3 class=\"TaskName\">${task.description}</h3>\r\n    </div>\r\n    <button class=\"upload\"><img src=\"${_options_png__WEBPACK_IMPORTED_MODULE_0__}\" class =\"upload\" alt=\"options\"></button>\r\n      `;\r\n        listcontainer.appendChild(taskcontainer);\r\n      });\r\n    };\r\n  }\r\n}\r\n\n\n//# sourceURL=webpack://tasks/./src/task.js?");
+
+/***/ }),
+
+/***/ "./src/enter.png":
+/*!***********************!*\
+  !*** ./src/enter.png ***!
+  \***********************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"b46edd8ddf44f4deef89.png\";\n\n//# sourceURL=webpack://tasks/./src/enter.png?");
+
+/***/ }),
+
+/***/ "./src/options.png":
+/*!*************************!*\
+  !*** ./src/options.png ***!
+  \*************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"4f742a6a698fe36e57db.png\";\n\n//# sourceURL=webpack://tasks/./src/options.png?");
 
 /***/ })
 
@@ -181,6 +201,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /******/ 		};
 /******/ 	})();
 /******/ 	
+/******/ 	/* webpack/runtime/global */
+/******/ 	(() => {
+/******/ 		__webpack_require__.g = (function() {
+/******/ 			if (typeof globalThis === 'object') return globalThis;
+/******/ 			try {
+/******/ 				return this || new Function('return this')();
+/******/ 			} catch (e) {
+/******/ 				if (typeof window === 'object') return window;
+/******/ 			}
+/******/ 		})();
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	(() => {
 /******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
@@ -195,6 +227,29 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /******/ 			}
 /******/ 			Object.defineProperty(exports, '__esModule', { value: true });
 /******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/publicPath */
+/******/ 	(() => {
+/******/ 		var scriptUrl;
+/******/ 		if (__webpack_require__.g.importScripts) scriptUrl = __webpack_require__.g.location + "";
+/******/ 		var document = __webpack_require__.g.document;
+/******/ 		if (!scriptUrl && document) {
+/******/ 			if (document.currentScript)
+/******/ 				scriptUrl = document.currentScript.src;
+/******/ 			if (!scriptUrl) {
+/******/ 				var scripts = document.getElementsByTagName("script");
+/******/ 				if(scripts.length) {
+/******/ 					var i = scripts.length - 1;
+/******/ 					while (i > -1 && !scriptUrl) scriptUrl = scripts[i--].src;
+/******/ 				}
+/******/ 			}
+/******/ 		}
+/******/ 		// When supporting browsers where an automatic publicPath is not supported you must specify an output.publicPath manually via configuration
+/******/ 		// or pass an empty string ("") and set the __webpack_public_path__ variable from your code to use your own logic.
+/******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
+/******/ 		scriptUrl = scriptUrl.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
+/******/ 		__webpack_require__.p = scriptUrl;
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/nonce */

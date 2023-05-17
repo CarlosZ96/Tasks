@@ -1,3 +1,8 @@
+import options from './options.png';
+import enter from './enter.png';
+
+const AddNewTask = document.querySelector('.Add');
+AddNewTask.innerHTML=`<img src="${enter}" class ="upload" alt="enter">`;
 export default class Tasks {
   constructor(tasks) {
     this.tasks = tasks;
@@ -17,7 +22,7 @@ export default class Tasks {
         <input type="checkbox">
         <h3 class="TaskName">${task.description}</h3>
     </div>
-    <button class="upload"></button>
+    <button class="upload"><img src="${options}" class ="upload" alt="options"></button>
       `;
         listcontainer.appendChild(taskcontainer);
       });
