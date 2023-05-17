@@ -25,5 +25,3 @@ const tasks = [
 ];
 const taskso = new Tasks(tasks);
 taskso.ShowTask();
-
-
