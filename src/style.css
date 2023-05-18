@@ -21,7 +21,8 @@
   border-bottom: 1px solid #2d2d2d;
 }
 
-.upload {
+.upload,
+.removeBtn{
   height: 25px;
   width: 25px;
   background: none;
