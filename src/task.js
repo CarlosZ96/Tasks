@@ -7,7 +7,7 @@ export default class Tasks {
   constructor(tasks) {
     this.tasks = tasks;
     this.AddTask = (description) => {
-      const task = { description, iscomplete: false, i: tasks.length + 1 };
+      const task = { description, iscomplete: false, id: tasks.length + 1 };
       tasks.push(task);
     };
     this.ShowTask = () => {
@@ -21,13 +21,12 @@ export default class Tasks {
         <input type="checkbox">
         <h3 class="TaskName">${task.description}</h3>
     </div>
-    <div>
-    <button class="removeBtn"><img src="${Delete}" class ="upload" alt="options"></button>    
-    </div>
+    <button class="removeBtn" data-id="${task.id}"><img src="${Delete}" class ="upload" alt="options"></button> 
       `;
         listcontainer.appendChild(taskcontainer);
       });
-    }; 
+      console.log(tasks);
+    };
   }
 }
 export { Tasks };
