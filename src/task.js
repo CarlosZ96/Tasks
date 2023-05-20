@@ -13,7 +13,7 @@ export default class Tasks {
     this.tasks.push(task);
     localStorage.setItem('tasks', JSON.stringify(this.tasks));
   }
-  
+
   DeleteTask(id) {
     const index = this.tasks.findIndex((task) => task.id === Number(id));
     if (index !== -1) {
@@ -59,7 +59,7 @@ export default class Tasks {
           InputDescription.disabled = true;
         }
       });
-    })
+    });
   }
 
   DeleteTaskClick() {
