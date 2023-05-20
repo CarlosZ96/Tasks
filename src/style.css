@@ -27,6 +27,12 @@
   width: 25px;
   background: none;
   border: none;
+  padding: 0;
+}
+
+.removeBtn{
+  height: 35px;
+  width: 35px;
 }
 
 .AddContainer input {
@@ -75,8 +81,12 @@
 
 .task {
   width: 100%;
+  margin-bottom: 6px;
 }
 
 .TaskName {
   width: 100%;
+  border: none;
+  height: 15px;
+  font-size: large;
 }
