@@ -3,7 +3,6 @@ import { Tasks } from './task.js';
 
 const AddNewTask = document.querySelector('.Add');
 const cleart = document.querySelector('.ClearButton');
-const taskclass = document.querySelector('.task');
 const taskso = new Tasks();
 AddNewTask.addEventListener('click', (event) => {
   event.preventDefault();

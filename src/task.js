@@ -11,10 +11,9 @@ export default class Tasks {
     const task = { description, iscomplete: false, id: this.tasks.length + 1 };
     this.tasks.push(task);
     localStorage.setItem('tasks', JSON.stringify(this.tasks));
-  };
+  }
   DeleteTask(id) {
     const index = this.tasks.findIndex((task) => task.id === Number(id));
-    console.log(index);
     if (index !== -1) {
       this.tasks.splice(index, 1);
       localStorage.setItem('tasks', JSON.stringify(this.tasks));
@@ -58,7 +57,6 @@ export default class Tasks {
         }
       });
     });
-    console.log(this.tasks);
   };
   DeleteTaskClick() {
     const listcontainer = document.querySelector('.ListContainer');
@@ -68,16 +66,15 @@ export default class Tasks {
         this.DeleteTask(id);
         this.ShowTask();
       }
-    });  
+    })
   }
-  EditTask(id){
+  EditTask(id) {
     const index = this.tasks.findIndex((task) => task.id === Number(id));
     if (index !== -1) {
       const newDescription = document.getElementById('TaskInput').value;
       this.tasks[index].description = newDescription;
       localStorage.setItem('tasks', JSON.stringify(this.tasks));
     }
-    console.log(this.tasks);
   }
 }
 export { Tasks };

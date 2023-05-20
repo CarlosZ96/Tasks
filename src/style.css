@@ -22,7 +22,7 @@
 }
 
 .upload,
-.removeBtn{
+.removeBtn {
   height: 25px;
   width: 25px;
   background: none;
@@ -30,7 +30,7 @@
   padding: 0;
 }
 
-.removeBtn{
+.removeBtn {
   height: 35px;
   width: 35px;
 }
