@@ -2,6 +2,7 @@ import enter from './enter.png';
 import Delete from './Freepik.png';
 
 const AddNewTask = document.querySelector('.Add');
+const InputDescription = document.querySelector('.task');
 AddNewTask.innerHTML = `<img src ="${enter}" class ="upload" alt="enter">`;
 export default class Tasks {
   constructor() {
