@@ -42,22 +42,27 @@ export default class Tasks {
         const { id } = event.target.dataset;
         this.DeleteTask(id);
         this.ShowTask();
+        for (let i = 0; i < task.length; i++) {
+          task[i].id=(i+1);
+        }
       });
-      const TaskContainer = document.querySelector('.TaskTittleContainer');
-      TaskContainer.addEventListener('click', (event) => {
+      const TaskTittleContainer = taskcontainer.querySelector('.TaskTittleContainer');
+      TaskTittleContainer.addEventListener('click', (event) => {
         event.preventDefault();
+        const InputDescriptionr = taskcontainer.querySelector('.TaskName');
+        InputDescriptionr.disabled = false;
         const { id } = event.target.dataset;
-        const taskso = new Tasks();
-        taskso.EditTask(id);
-        const InputDescription = document.querySelector('.TaskName');
-        InputDescription.disabled = false;
+        this.EditTask(id);
       });
-      TaskContainer.addEventListener('keydown', (event) => {
+      TaskTittleContainer.addEventListener('keydown', (event) => {
         if (event.key === 'Enter') {
           event.preventDefault();
-          const InputDescription = document.querySelector('.TaskName');
+          const InputDescription = taskcontainer.querySelector('.TaskName');
+          const newDescription = taskcontainer.querySelector('.TaskName').value;
           InputDescription.disabled = true;
-        }
+          const { id } = event.target.dataset;
+          this.EditTask(id, newDescription);
+        }    
       });
     });
   }
@@ -69,15 +74,21 @@ export default class Tasks {
         const { id } = event.target.dataset;
         this.DeleteTask(id);
         this.ShowTask();
+        for (let i = 0; i < this.tasks.length; i++) {
+          this.tasks[i].id = (i+1);
+        }
       }
     });
   }
 
-  EditTask(id) {
+  EditTask(id, newDescription) {
     const index = this.tasks.findIndex((task) => task.id === Number(id));
     if (index !== -1) {
-      const newDescription = document.getElementById('TaskInput').value;
       this.tasks[index].description = newDescription;
+      console.log(newDescription);
+      for (let i = 0; i < this.tasks.length; i++) {
+        console.log('Task:'+this.tasks[i].id);
+      }
       localStorage.setItem('tasks', JSON.stringify(this.tasks));
     }
   }
