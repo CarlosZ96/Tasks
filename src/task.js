@@ -75,11 +75,19 @@ export default class Tasks {
         const { id } = event.target.dataset;
         this.DeleteTask(id);
         this.ShowTask();
+        this.updateTaskIds();
         for (let i = 0; i < this.tasks.length; i++) {
           this.tasks[i].id = (i+1);
         }
       }
     });
+  }
+
+  updateTaskIds() {
+    this.tasks = this.tasks.map((task, index) => ({
+      ...task,
+      id: index + 1,
+    }));
   }
 
   EditTask(id, newDescription) {
