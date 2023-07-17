@@ -62,7 +62,7 @@ export default class Tasks {
           InputDescription.disabled = true;
           const { id } = event.target.dataset;
           this.EditTask(id, newDescription);
-        } 
+        }
       });
     });
   }
