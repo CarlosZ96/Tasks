@@ -42,8 +42,8 @@ export default class Tasks {
         const { id } = event.target.dataset;
         this.DeleteTask(id);
         this.ShowTask();
-        for (let i = 0; i < task.length; i+1) {
-          task[i].id = ( i + 1 );
+        for (let i = 0; i < task.length; i + 1) {
+          task[i].id = (i + 1);
         }
       });
       const TaskTittleContainer = taskcontainer.querySelector('.TaskTittleContainer');
@@ -62,7 +62,7 @@ export default class Tasks {
           InputDescription.disabled = true;
           const { id } = event.target.dataset;
           this.EditTask(id, newDescription);
-        }    
+        } 
       });
     });
   }
@@ -75,8 +75,8 @@ export default class Tasks {
         this.DeleteTask(id);
         this.ShowTask();
         this.updateTaskIds();
-        for (let i = 0; i < this.tasks.length; i+1) {
-          this.tasks[i].id = ( i + 1 );
+        for (let i = 0; i < this.tasks.length; i + 1) {
+          this.tasks[i].id = (i + 1);
         }
       }
     });
