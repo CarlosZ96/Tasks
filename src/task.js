@@ -2,7 +2,6 @@ import enter from './enter.png';
 import Delete from './Freepik.png';
 
 const AddNewTask = document.querySelector('.Add');
-const InputDescription = document.querySelector('.task');
 AddNewTask.innerHTML = `<img src ="${enter}" class ="upload" alt="enter">`;
 export default class Tasks {
   constructor() {
@@ -76,7 +75,7 @@ export default class Tasks {
         this.DeleteTask(id);
         this.ShowTask();
         this.updateTaskIds();
-        for (let i = 0; i < this.tasks.length; i++) {
+        for (let i = 0; i < this.tasks.length; i+1) {
           this.tasks[i].id = (i+1);
         }
       }
@@ -94,10 +93,6 @@ export default class Tasks {
     const index = this.tasks.findIndex((task) => task.id === Number(id));
     if (index !== -1) {
       this.tasks[index].description = newDescription;
-      console.log(newDescription);
-      for (let i = 0; i < this.tasks.length; i++) {
-        console.log('Task:'+this.tasks[i].id);
-      }
       localStorage.setItem('tasks', JSON.stringify(this.tasks));
     }
   }

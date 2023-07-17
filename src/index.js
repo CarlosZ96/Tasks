@@ -10,9 +10,9 @@ AddNewTask.addEventListener('click', (event) => {
   taskso.AddTask(description);
   taskso.ShowTask();
   document.querySelector('.TaskListContainer').reset();
-  event.preventDefault();
-  
+  event.preventDefault(); 
 });
+
 const description = document.getElementById('TaskInput');
 
 description.addEventListener('keydown', (event) => {
