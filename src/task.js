@@ -114,6 +114,7 @@ export default class Tasks {
       localStorage.setItem('tasks', JSON.stringify(this.tasks));
     }
   }
+
   CheckTask(id, iscomplete) {
     const index = this.tasks.findIndex((task) => task.id === Number(id));
     if (index !== -1) {
@@ -121,6 +122,5 @@ export default class Tasks {
       localStorage.setItem('tasks', JSON.stringify(this.tasks));
     }
   }
-
 }
 export { Tasks };
