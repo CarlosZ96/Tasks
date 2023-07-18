@@ -45,7 +45,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://carlosz96.github.io/Capstone-Conference/)
+- [Live Demo Link](https://carlosz96.github.io/Tasks/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
