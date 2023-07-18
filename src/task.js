@@ -29,10 +29,12 @@ export default class Tasks {
       const taskcontainer = document.createElement('li');
       taskcontainer.classList.add('task');
       taskcontainer.innerHTML = `
-  <div class="TaskTittleContainer">
-      <input type="checkbox">
-      <input type="text" name="" class="TaskName" value="${task.description}" data-id="${task.id}" disabled="">
-  </div>
+    <div class="TaskContainer">
+       <input type="checkbox">
+      <div class="TaskTittleContainer">
+       <input type="text" name="" class="TaskName" value="${task.description}" data-id="${task.id}" disabled="">
+      </div>
+    </div>
   <img src="${Delete}" class ="removeBtn" alt="options" data-id="${task.id}">
     `;
       listcontainer.appendChild(taskcontainer);
