@@ -25,6 +25,11 @@ description.addEventListener('keydown', (event) => {
   }
 });
 
+const clearButton = document.querySelector('.ClearButton');
+clearButton.addEventListener('click', () => {
+  taskso.ClearCompletedTasks();
+});
+
 taskso.ShowTask();
 taskso.DeleteTaskClick();
 cleart.addEventListener('click', (event) => {
