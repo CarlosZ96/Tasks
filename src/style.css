@@ -71,6 +71,8 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  width: 100%;
+  margin-bottom: 6px;
 }
 
 .TaskContainer {
@@ -82,11 +84,6 @@
 .ListContainer {
   display: flex;
   flex-direction: column;
-}
-
-.task {
-  width: 100%;
-  margin-bottom: 6px;
 }
 
 .TaskName {

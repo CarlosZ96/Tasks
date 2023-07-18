@@ -22,7 +22,7 @@ export default class Tasks {
     }
   }
 
-  ClearCompletedTasks()  {
+  ClearCompletedTasks() {
     this.tasks = this.tasks.filter((task) => !task.iscomplete);
     this.updateTaskIds();
     localStorage.setItem('tasks', JSON.stringify(this.tasks));
@@ -44,8 +44,8 @@ export default class Tasks {
     </div>
   <img src="${Delete}" class ="removeBtn" alt="options" data-id="${task.id}">
     `;
-    const checkboxb = taskcontainer.querySelector('.Tcheckbox');
-    checkboxb.id = `task_${task.id}`;
+      const checkboxb = taskcontainer.querySelector('.Tcheckbox');
+      checkboxb.id = `task_${task.id}`;
       listcontainer.appendChild(taskcontainer);
       const btnrevome = taskcontainer.querySelector('.removeBtn');
       btnrevome.addEventListener('click', (event) => {
@@ -114,7 +114,7 @@ export default class Tasks {
       localStorage.setItem('tasks', JSON.stringify(this.tasks));
     }
   }
-  CheckTask(id, iscomplete){
+  CheckTask(id, iscomplete) {
     const index = this.tasks.findIndex((task) => task.id === Number(id));
     if (index !== -1) {
       this.tasks[index].iscomplete = iscomplete;
