@@ -19,4 +19,20 @@ describe('Tasks class', () => {
       expect(storedTasks[1].description).toBe('Task 2');
     });
   })
+  describe('DeleteTask(id)', () => {
+    it('should delete the task with the given id', () => {
+      // Add some tasks to the tasks array
+      taskso.tasks.push(
+        { id: 1, description: 'Task 1', iscomplete: false },
+        { id: 2, description: 'Task 2', iscomplete: true },
+        { id: 3, description: 'Task 3', iscomplete: false }
+      );
+      const taskIdToDelete = 2;
+      taskso.DeleteTask(taskIdToDelete);
+      // Check if the task was deleted correctly
+      expect(taskso.tasks).toHaveLength(2);
+      expect(taskso.tasks.some(task => task.id === taskIdToDelete)).toBeFalsy();
+    });
+    // Add more test cases for different scenarios, if needed
+  });
 });
