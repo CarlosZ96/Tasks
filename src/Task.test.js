@@ -1,6 +1,6 @@
 import { Tasks } from './task.js';
 import { JSDOM } from 'jsdom';
-
+/* eslint-disable */
 describe('Tasks', () => {
   let taskso;
   let document;
