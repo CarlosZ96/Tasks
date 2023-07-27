@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1690480413471" clover="3.2.0">
-  <project timestamp="1690480413472" name="All files">
+<coverage generated="1690481972722" clover="3.2.0">
+  <project timestamp="1690481972723" name="All files">
     <metrics statements="68" coveredstatements="9" conditionals="12" coveredconditionals="3" methods="20" coveredmethods="4" elements="100" coveredelements="16" complexity="0" loc="68" ncloc="68" packages="1" files="1" classes="1"/>
     <file name="task.js" path="C:\Users\InvitadoZ\OneDrive\Documentos\Proweb\Tasks\src\task.js">
       <metrics statements="68" coveredstatements="9" conditionals="12" coveredconditionals="3" methods="20" coveredmethods="4"/>
