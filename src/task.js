@@ -37,7 +37,7 @@ export default class Tasks {
        <input type="text" name="" class="TaskName" value="${task.description}" data-id="${task.id}" disabled="">
       </div>
     </div>
-  <img src="${Delete}" class ="removeBtn" alt="options" data-id="${task.id}">
+  <img src=" " class ="removeBtn" alt="options" data-id="${task.id}">
     `;
       const checkboxb = taskcontainer.querySelector('.Tcheckbox');
       checkboxb.id = `task_${task.id}`;
