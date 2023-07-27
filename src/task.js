@@ -1,8 +1,3 @@
-import enter from './enter.png';
-import Delete from './Freepik.png';
-
-const AddNewTask = document.querySelector('.Add');
-AddNewTask.innerHTML = `<img src ="${enter}" class ="upload" alt="enter">`;
 export default class Tasks {
   constructor() {
     this.tasks = JSON.parse(localStorage.getItem('tasks')) || [];
@@ -42,7 +37,7 @@ export default class Tasks {
        <input type="text" name="" class="TaskName" value="${task.description}" data-id="${task.id}" disabled="">
       </div>
     </div>
-  <img src="${Delete}" class ="removeBtn" alt="options" data-id="${task.id}">
+  <img src=" " class ="removeBtn" alt="options" data-id="${task.id}">
     `;
       const checkboxb = taskcontainer.querySelector('.Tcheckbox');
       checkboxb.id = `task_${task.id}`;
