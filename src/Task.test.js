@@ -25,7 +25,7 @@ describe('Tasks', () => {
       const taskIdToDelete = 2;
       taskso.DeleteTask(taskIdToDelete);
       expect(taskso.tasks).toHaveLength(2);
-      expect(taskso.tasks.some(task => task.id === taskIdToDelete)).toBeFalsy();
+      expect(taskso.tasks.some((task) => task.id === taskIdToDelete)).toBeFalsy();
     });
   });
 });
