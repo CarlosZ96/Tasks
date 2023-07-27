@@ -1,8 +1,8 @@
-// import enter from './enter.png';
-// import Delete from './Freepik.png';
+//import enter from './enter.png';
+//import Delete from './Freepik.png';
 
 const AddNewTask = document.querySelector('.Add');
-// AddNewTask.innerHTML = `<img src ="${enter}" class ="upload" alt="enter">`;
+ //AddNewTask.innerHTML = `<img src ="${enter}" class ="upload" alt="enter">`;
 export default class Tasks {
   constructor() {
     this.tasks = JSON.parse(localStorage.getItem('tasks')) || [];

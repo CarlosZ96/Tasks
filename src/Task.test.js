@@ -18,4 +18,5 @@ describe('Tasks class', () => {
       expect(storedTasks[0].description).toBe('Task 1');
       expect(storedTasks[1].description).toBe('Task 2');
     });
-  })});
+  })
+});

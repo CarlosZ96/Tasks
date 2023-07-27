@@ -126,27 +126,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sty
   \*********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   Tasks: () => (/* binding */ Tasks),\n/* harmony export */   \"default\": () => (/* binding */ Tasks)\n/* harmony export */ });\n/* harmony import */ var _enter_png__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./enter.png */ \"./src/enter.png\");\n/* harmony import */ var _Freepik_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Freepik.png */ \"./src/Freepik.png\");\n\r\n\r\n\r\nconst AddNewTask = document.querySelector('.Add');\r\nAddNewTask.innerHTML = `<img src =\"${_enter_png__WEBPACK_IMPORTED_MODULE_0__}\" class =\"upload\" alt=\"enter\">`;\r\nclass Tasks {\r\n  constructor() {\r\n    this.tasks = JSON.parse(localStorage.getItem('tasks')) || [];\r\n  }\r\n\r\n  AddTask(description) {\r\n    const task = { description, iscomplete: false, id: this.tasks.length + 1 };\r\n    this.tasks.push(task);\r\n    localStorage.setItem('tasks', JSON.stringify(this.tasks));\r\n  }\r\n\r\n  DeleteTask(id) {\r\n    const index = this.tasks.findIndex((task) => task.id === Number(id));\r\n    if (index !== -1) {\r\n      this.tasks.splice(index, 1);\r\n      localStorage.setItem('tasks', JSON.stringify(this.tasks));\r\n    }\r\n  }\r\n\r\n  ClearCompletedTasks() {\r\n    this.tasks = this.tasks.filter((task) => !task.iscomplete);\r\n    this.updateTaskIds();\r\n    localStorage.setItem('tasks', JSON.stringify(this.tasks));\r\n    this.ShowTask();\r\n  }\r\n\r\n  ShowTask() {\r\n    const listcontainer = document.querySelector('.ListContainer');\r\n    listcontainer.innerHTML = '';\r\n    this.tasks.forEach((task) => {\r\n      const taskcontainer = document.createElement('li');\r\n      taskcontainer.classList.add('task');\r\n      taskcontainer.innerHTML = `\r\n    <div class=\"TaskContainer\">\r\n       <input type=\"checkbox\" class=\"Tcheckbox\">\r\n      <div class=\"TaskTittleContainer\">\r\n       <input type=\"text\" name=\"\" class=\"TaskName\" value=\"${task.description}\" data-id=\"${task.id}\" disabled=\"\">\r\n      </div>\r\n    </div>\r\n  <img src=\"${_Freepik_png__WEBPACK_IMPORTED_MODULE_1__}\" class =\"removeBtn\" alt=\"options\" data-id=\"${task.id}\">\r\n    `;\r\n      const checkboxb = taskcontainer.querySelector('.Tcheckbox');\r\n      checkboxb.id = `task_${task.id}`;\r\n      listcontainer.appendChild(taskcontainer);\r\n      const btnrevome = taskcontainer.querySelector('.removeBtn');\r\n      btnrevome.addEventListener('click', (event) => {\r\n        event.preventDefault();\r\n        const { id } = event.target.dataset;\r\n        this.DeleteTask(id);\r\n        this.ShowTask();\r\n        for (let i = 0; i < task.length; i + 1) {\r\n          task[i].id = (i + 1);\r\n        }\r\n      });\r\n      const TaskTittleContainer = taskcontainer.querySelector('.TaskTittleContainer');\r\n      TaskTittleContainer.addEventListener('click', (event) => {\r\n        event.preventDefault();\r\n        const InputDescriptionr = taskcontainer.querySelector('.TaskName');\r\n        InputDescriptionr.disabled = false;\r\n        const { id } = event.target.dataset;\r\n        this.EditTask(id);\r\n      });\r\n      TaskTittleContainer.addEventListener('keydown', (event) => {\r\n        if (event.key === 'Enter') {\r\n          event.preventDefault();\r\n          const InputDescription = taskcontainer.querySelector('.TaskName');\r\n          const newDescription = taskcontainer.querySelector('.TaskName').value;\r\n          InputDescription.disabled = true;\r\n          const { id } = event.target.dataset;\r\n          this.EditTask(id, newDescription);\r\n        }\r\n      });\r\n      checkboxb.addEventListener('click', (event) => {\r\n        event.stopPropagation();\r\n\r\n        const { id } = task;\r\n        const iscomplete = event.target.checked;\r\n        this.CheckTask(id, iscomplete);\r\n      });\r\n    });\r\n  }\r\n\r\n  DeleteTaskClick() {\r\n    const listcontainer = document.querySelector('.ListContainer');\r\n    listcontainer.addEventListener('click', (event) => {\r\n      if (event.target.classList.contains('button_remove')) {\r\n        const { id } = event.target.dataset;\r\n        this.DeleteTask(id);\r\n        this.ShowTask();\r\n        this.updateTaskIds();\r\n        for (let i = 0; i < this.tasks.length; i + 1) {\r\n          this.tasks[i].id = (i + 1);\r\n        }\r\n      }\r\n    });\r\n  }\r\n\r\n  updateTaskIds() {\r\n    this.tasks = this.tasks.map((task, index) => ({\r\n      ...task,\r\n      id: index + 1,\r\n    }));\r\n  }\r\n\r\n  EditTask(id, newDescription) {\r\n    const index = this.tasks.findIndex((task) => task.id === Number(id));\r\n    if (index !== -1) {\r\n      this.tasks[index].description = newDescription;\r\n      localStorage.setItem('tasks', JSON.stringify(this.tasks));\r\n    }\r\n  }\r\n\r\n  CheckTask(id, iscomplete) {\r\n    const index = this.tasks.findIndex((task) => task.id === Number(id));\r\n    if (index !== -1) {\r\n      this.tasks[index].iscomplete = iscomplete;\r\n      localStorage.setItem('tasks', JSON.stringify(this.tasks));\r\n    }\r\n  }\r\n}\r\n\n\n//# sourceURL=webpack://tasks/./src/task.js?");
-
-/***/ }),
-
-/***/ "./src/Freepik.png":
-/*!*************************!*\
-  !*** ./src/Freepik.png ***!
-  \*************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-eval("module.exports = __webpack_require__.p + \"92881cf98b591daca7ae.png\";\n\n//# sourceURL=webpack://tasks/./src/Freepik.png?");
-
-/***/ }),
-
-/***/ "./src/enter.png":
-/*!***********************!*\
-  !*** ./src/enter.png ***!
-  \***********************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-eval("module.exports = __webpack_require__.p + \"b46edd8ddf44f4deef89.png\";\n\n//# sourceURL=webpack://tasks/./src/enter.png?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   Tasks: () => (/* binding */ Tasks),\n/* harmony export */   \"default\": () => (/* binding */ Tasks)\n/* harmony export */ });\n// import enter from './enter.png';\r\n// import Delete from './Freepik.png';\r\n\r\nconst AddNewTask = document.querySelector('.Add');\r\n// AddNewTask.innerHTML = `<img src =\"${enter}\" class =\"upload\" alt=\"enter\">`;\r\nclass Tasks {\r\n  constructor() {\r\n    this.tasks = JSON.parse(localStorage.getItem('tasks')) || [];\r\n  }\r\n\r\n  AddTask(description) {\r\n    const task = { description, iscomplete: false, id: this.tasks.length + 1 };\r\n    this.tasks.push(task);\r\n    localStorage.setItem('tasks', JSON.stringify(this.tasks));\r\n  }\r\n\r\n  DeleteTask(id) {\r\n    const index = this.tasks.findIndex((task) => task.id === Number(id));\r\n    if (index !== -1) {\r\n      this.tasks.splice(index, 1);\r\n      localStorage.setItem('tasks', JSON.stringify(this.tasks));\r\n    }\r\n  }\r\n\r\n  ClearCompletedTasks() {\r\n    this.tasks = this.tasks.filter((task) => !task.iscomplete);\r\n    this.updateTaskIds();\r\n    localStorage.setItem('tasks', JSON.stringify(this.tasks));\r\n    this.ShowTask();\r\n  }\r\n\r\n  ShowTask() {\r\n    const listcontainer = document.querySelector('.ListContainer');\r\n    listcontainer.innerHTML = '';\r\n    this.tasks.forEach((task) => {\r\n      const taskcontainer = document.createElement('li');\r\n      taskcontainer.classList.add('task');\r\n      taskcontainer.innerHTML = `\r\n    <div class=\"TaskContainer\">\r\n       <input type=\"checkbox\" class=\"Tcheckbox\">\r\n      <div class=\"TaskTittleContainer\">\r\n       <input type=\"text\" name=\"\" class=\"TaskName\" value=\"${task.description}\" data-id=\"${task.id}\" disabled=\"\">\r\n      </div>\r\n    </div>\r\n  <img src=\"${Delete}\" class =\"removeBtn\" alt=\"options\" data-id=\"${task.id}\">\r\n    `;\r\n      const checkboxb = taskcontainer.querySelector('.Tcheckbox');\r\n      checkboxb.id = `task_${task.id}`;\r\n      listcontainer.appendChild(taskcontainer);\r\n      const btnrevome = taskcontainer.querySelector('.removeBtn');\r\n      btnrevome.addEventListener('click', (event) => {\r\n        event.preventDefault();\r\n        const { id } = event.target.dataset;\r\n        this.DeleteTask(id);\r\n        this.ShowTask();\r\n        for (let i = 0; i < task.length; i + 1) {\r\n          task[i].id = (i + 1);\r\n        }\r\n      });\r\n      const TaskTittleContainer = taskcontainer.querySelector('.TaskTittleContainer');\r\n      TaskTittleContainer.addEventListener('click', (event) => {\r\n        event.preventDefault();\r\n        const InputDescriptionr = taskcontainer.querySelector('.TaskName');\r\n        InputDescriptionr.disabled = false;\r\n        const { id } = event.target.dataset;\r\n        this.EditTask(id);\r\n      });\r\n      TaskTittleContainer.addEventListener('keydown', (event) => {\r\n        if (event.key === 'Enter') {\r\n          event.preventDefault();\r\n          const InputDescription = taskcontainer.querySelector('.TaskName');\r\n          const newDescription = taskcontainer.querySelector('.TaskName').value;\r\n          InputDescription.disabled = true;\r\n          const { id } = event.target.dataset;\r\n          this.EditTask(id, newDescription);\r\n        }\r\n      });\r\n      checkboxb.addEventListener('click', (event) => {\r\n        event.stopPropagation();\r\n\r\n        const { id } = task;\r\n        const iscomplete = event.target.checked;\r\n        this.CheckTask(id, iscomplete);\r\n      });\r\n    });\r\n  }\r\n\r\n  DeleteTaskClick() {\r\n    const listcontainer = document.querySelector('.ListContainer');\r\n    listcontainer.addEventListener('click', (event) => {\r\n      if (event.target.classList.contains('button_remove')) {\r\n        const { id } = event.target.dataset;\r\n        this.DeleteTask(id);\r\n        this.ShowTask();\r\n        this.updateTaskIds();\r\n        for (let i = 0; i < this.tasks.length; i + 1) {\r\n          this.tasks[i].id = (i + 1);\r\n        }\r\n      }\r\n    });\r\n  }\r\n\r\n  updateTaskIds() {\r\n    this.tasks = this.tasks.map((task, index) => ({\r\n      ...task,\r\n      id: index + 1,\r\n    }));\r\n  }\r\n\r\n  EditTask(id, newDescription) {\r\n    const index = this.tasks.findIndex((task) => task.id === Number(id));\r\n    if (index !== -1) {\r\n      this.tasks[index].description = newDescription;\r\n      localStorage.setItem('tasks', JSON.stringify(this.tasks));\r\n    }\r\n  }\r\n\r\n  CheckTask(id, iscomplete) {\r\n    const index = this.tasks.findIndex((task) => task.id === Number(id));\r\n    if (index !== -1) {\r\n      this.tasks[index].iscomplete = iscomplete;\r\n      localStorage.setItem('tasks', JSON.stringify(this.tasks));\r\n    }\r\n  }\r\n}\r\n\n\n//# sourceURL=webpack://tasks/./src/task.js?");
 
 /***/ })
 
@@ -201,18 +181,6 @@ eval("module.exports = __webpack_require__.p + \"b46edd8ddf44f4deef89.png\";\n\n
 /******/ 		};
 /******/ 	})();
 /******/ 	
-/******/ 	/* webpack/runtime/global */
-/******/ 	(() => {
-/******/ 		__webpack_require__.g = (function() {
-/******/ 			if (typeof globalThis === 'object') return globalThis;
-/******/ 			try {
-/******/ 				return this || new Function('return this')();
-/******/ 			} catch (e) {
-/******/ 				if (typeof window === 'object') return window;
-/******/ 			}
-/******/ 		})();
-/******/ 	})();
-/******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	(() => {
 /******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
@@ -227,29 +195,6 @@ eval("module.exports = __webpack_require__.p + \"b46edd8ddf44f4deef89.png\";\n\n
 /******/ 			}
 /******/ 			Object.defineProperty(exports, '__esModule', { value: true });
 /******/ 		};
-/******/ 	})();
-/******/ 	
-/******/ 	/* webpack/runtime/publicPath */
-/******/ 	(() => {
-/******/ 		var scriptUrl;
-/******/ 		if (__webpack_require__.g.importScripts) scriptUrl = __webpack_require__.g.location + "";
-/******/ 		var document = __webpack_require__.g.document;
-/******/ 		if (!scriptUrl && document) {
-/******/ 			if (document.currentScript)
-/******/ 				scriptUrl = document.currentScript.src;
-/******/ 			if (!scriptUrl) {
-/******/ 				var scripts = document.getElementsByTagName("script");
-/******/ 				if(scripts.length) {
-/******/ 					var i = scripts.length - 1;
-/******/ 					while (i > -1 && !scriptUrl) scriptUrl = scripts[i--].src;
-/******/ 				}
-/******/ 			}
-/******/ 		}
-/******/ 		// When supporting browsers where an automatic publicPath is not supported you must specify an output.publicPath manually via configuration
-/******/ 		// or pass an empty string ("") and set the __webpack_public_path__ variable from your code to use your own logic.
-/******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
-/******/ 		scriptUrl = scriptUrl.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
-/******/ 		__webpack_require__.p = scriptUrl;
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/nonce */
