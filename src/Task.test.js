@@ -24,10 +24,8 @@ describe('Tasks class', () => {
       );
       const taskIdToDelete = 2;
       taskso.DeleteTask(taskIdToDelete);
-      // Check if the task was deleted correctly
       expect(taskso.tasks).toHaveLength(2);
       expect(taskso.tasks.some(task => task.id === taskIdToDelete)).toBeFalsy();
     });
-    // Add more test cases for different scenarios, if needed
   });
 });
