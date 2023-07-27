@@ -9,7 +9,6 @@ describe('Tasks', () => {
     taskso = new Tasks();
     taskso.tasks = [];
 
-    // Create a mock DOM environment using jsdom
     const dom = new JSDOM(`
       <!DOCTYPE html>
       <html lang="en">
