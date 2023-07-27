@@ -1,4 +1,3 @@
-const AddNewTask = document.querySelector('.Add');
 export default class Tasks {
   constructor() {
     this.tasks = JSON.parse(localStorage.getItem('tasks')) || [];
