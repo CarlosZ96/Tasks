@@ -4,7 +4,7 @@
   "description": "<a name=\"readme-top\">Organize your time with this simple application, which will allow you to manage your own to-do list.</a>",
   "main": "index.js",
   "scripts": {
-    "test": "jest --coverage",
+    "test": "jest",
     "build": "webpack --mode=development",
     "start": "webpack serve --open"
   },
