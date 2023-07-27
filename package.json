@@ -16,9 +16,10 @@
     "css-loader": "^6.7.3",
     "html-webpack-plugin": "^5.5.1",
     "jest": "^29.6.2",
-    "jest-environment-jsdom": "^29.0.1",
+    "jest-environment-jsdom": "^29.6.2",
     "jsdom": "^22.1.0",
     "style-loader": "^3.3.2",
+    "text-encoding-utf-8": "^1.0.2",
     "webpack": "^5.88.1",
     "webpack-cli": "^5.1.4"
   },
