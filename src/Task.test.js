@@ -2,17 +2,13 @@ import { Tasks } from './task.js';
 describe('Tasks class', () => {
   let tasks;
   beforeEach(() => {
-    // Create a new Tasks instance before each test case to start with a clean state
     tasks = new Tasks();
-    // Clear local storage before each test case
     localStorage.clear();
   });
-  // Test the AddTask(description) method
   describe('AddTask', () => {
     test('should add a new task to the tasks list', () => {
       tasks.AddTask('Task 1');
       tasks.AddTask('Task 2');
-      // Retrieve the tasks from local storage and check if they were added correctly
       const storedTasks = JSON.parse(localStorage.getItem('tasks'));
       expect(storedTasks).toHaveLength(2);
       expect(storedTasks[0].description).toBe('Task 1');
@@ -21,7 +17,6 @@ describe('Tasks class', () => {
   })
   describe('DeleteTask(id)', () => {
     it('should delete the task with the given id', () => {
-      // Add some tasks to the tasks array
       taskso.tasks.push(
         { id: 1, description: 'Task 1', iscomplete: false },
         { id: 2, description: 'Task 2', iscomplete: true },
