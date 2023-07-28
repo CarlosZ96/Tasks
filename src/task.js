@@ -18,10 +18,10 @@ export default class Tasks {
   }
 
   ClearCompletedTasks() {
-    this.tasks = this.tasks.filter((task) => !task.iscomplete);
-    this.updateTaskIds();
-    localStorage.setItem('tasks', JSON.stringify(this.tasks));
-    this.ShowTask();
+      this.tasks = this.tasks.filter((task) => !task.iscomplete);
+      this.updateTaskIds();
+      localStorage.setItem('tasks', JSON.stringify(this.tasks));
+      this.ShowTask();
   }
 
   ShowTask() {
