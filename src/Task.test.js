@@ -25,7 +25,7 @@ describe('Tasks', () => {
       taskso.DeleteTask(2);
       tasks = JSON.parse(localStorage.getItem('tasks'));
       expect(tasks).toHaveLength(2);
-      expect(tasks.map(task => task.description)).toEqual(['Task 1', 'Task 3']);
+      expect(tasks.map((task) => task.description)).toEqual(['Task 1', 'Task 3']);
     });
     it('should not delete anything if the id does not exist', () => {
       const taskso = new Tasks();
