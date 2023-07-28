@@ -29,7 +29,6 @@ describe('Tasks', () => {
       expect(tasks).toHaveLength(2);
       expect(tasks.map((task) => task.description)).toEqual(['Task 1', 'Task 2']);
     });
-
     it('should not remove any tasks if the list is empty', () => {
       const taskso = new Tasks();
       taskso.ClearCompletedTasks();
