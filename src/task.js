@@ -77,7 +77,6 @@ export default class Tasks {
       });
       checkboxb.addEventListener('click', (event) => {
         event.stopPropagation();
-
         const { id } = task;
         const iscomplete = event.target.checked;
         this.CheckTask(id, iscomplete);
